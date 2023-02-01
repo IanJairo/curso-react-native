@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boletim Escolar</title>
+</head>
+
+<body bgcolor="white">
+  <center>
+
+    <table border="1" cellspacing="5" bgcolor="white">
+      <caption><b>Introduza as notas</b></caption>
+      <tr>
+        <th rowspan="2">Nome</th>
+        <th colspan="4">Notas</th>
+      </tr>
+
+      <tr>
+        <th>1º Bimestre</th>
+        <th>2º Bimestre</th>
+        <th>3º Bimestre</th>
+        <th>4º Bimestre</th>
+      </tr>
+
+      <tr>
+        <td><input type="text" id="name" required></td>
+        <td><input type="number" min="0" max="10" id="b1" required></td>
+        <td><input type="number" min="0" max="10" id="b2" required></td>
+        <td><input type="number" min="0" max="10" id="b3" required></td>
+        <td><input type="number" min="0" max="10" id="b4" required></td>
+      </tr>
+
+      <tr>
+        <th colspan="5" height="30">
+          <input type="submit" onclick="checkSituation()" value="Adicionar">
+        </th>
+      </tr>
+    </table>
+    <br>
+
+    <table border="1" cellspacing="5" bgcolor="white" height="100" width="500" cellpadding="5" id="boletim">
+      <caption><b>Relação de Alunos</b></caption>
+      <tr>
+        <th width="180">Nome</th>
+        <th>Total de pontos</th>
+        <th>Média do ano </th>
+        <th>Situação</th>
+      </tr>
+
+    </table>
+  </center>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
